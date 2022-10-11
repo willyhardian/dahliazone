@@ -6,12 +6,19 @@
 <body>
     <h1>Product</h1>
     <form>
-        <select name="" id="">
+        <select name="" id="product-name">
             <option value="1">Kaos Polos</option>
             <option value="2">Baju Polos</option>
         </select>
-        <input type="text">
+        <input type="text" id="product-qty">
         <button type="button">Buy</button>
     </form>
+    <script>
+        let price = 0;
+        if(document.getElementById("product-name").value === 1) {
+            price = 10000;
+        }
+        alert(price * document.getElementById("product-qty").value)
+    </script>
 </body>
 </html>
